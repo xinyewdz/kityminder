@@ -54,14 +54,15 @@
             });
             
             $('p.login a').click(function() {
-                var urlparts = window.location.href.split('/');
-                urlparts.pop();
-                urlparts = urlparts.join('/');
-                fio.user.login({
-                    redirectUrl: urlparts + '/edit.html',
-                    remember: 7 * 24 * 60 * 60
-                });
-                loadingAnimate(true);
+                window.location.href = './edit.html';
+                //var urlparts = window.location.href.split('/');
+                //urlparts.pop();
+                //urlparts = urlparts.join('/');
+                //fio.user.login({
+                //    redirectUrl: urlparts + '/edit.html',
+                //   remember: 7 * 24 * 60 * 60
+                //});
+                //loadingAnimate(true);
             });
 
             function preload(url) {
